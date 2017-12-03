@@ -1,5 +1,5 @@
 import sqlite3
-conn = sqlite3.connect("c:/test.db")
+conn = sqlite3.connect("/home/luna/PycharmProjects/test.sqlite")
 print("Opened database successfully")
 c = conn.cursor()
 c.execute('''CREATE TABLE boughtlist

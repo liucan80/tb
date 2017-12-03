@@ -4,13 +4,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
-driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
+driver=webdriver.Chrome()
+#driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
 driver.get("https://www.taobao.com")
 driver.implicitly_wait(5)
 driver.find_element_by_id("J_SiteNavMytaobao").click()
 driver.implicitly_wait(5)
 driver.maximize_window()
-conn = sqlite3.connect("c:/test.db")
+conn=sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
+#conn = sqlite3.connect("c:/test.db")
 print("Opened database successfully")
 c = conn.cursor()
 c.execute('''CREATE TABLE boughtlist(
