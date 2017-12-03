@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
+import re
 driver=webdriver.Chrome()
 #driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
 driver.get("https://www.taobao.com")
@@ -14,14 +15,26 @@ driver.maximize_window()
 conn = sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
 print("Opened database successfully")
 c = conn.cursor()
-c.execute('''CREATE TABLE boughtlist
+try:
+    c.execute('''CREATE TABLE boughtlist
               (ID INT PRIMARY KEY     NOT NULL,
               DateOfOrder           TEXT    NOT NULL,
               OrderNumber            TEXT   NOT NUll,
               NameOfShop             TEXT   NOT NULL ,
               LinkOfShop             TEXT   NOT NULL 
               );''')
-print("Table created successfully")
+    print("Table created successfully")
+except:
+    c.execute("DROP TABLE boughtlist")
+    c.execute('''CREATE TABLE boughtlist
+                  (ID INT PRIMARY KEY     NOT NULL,
+                  DateOfOrder           TEXT    NOT NULL,
+                  OrderNumber            TEXT   NOT NUll,
+                  NameOfShop             TEXT   NOT NULL ,
+                  LinkOfShop             TEXT   NOT NULL 
+                  );''')
+finally:
+    print("成功创建数据表")
 try:
     print("请扫描二维码")
     element = WebDriverWait(driver, 20).until(
@@ -38,14 +51,18 @@ try:
     i = 0
     for table in boughttables:
         print(table)
+        print(table.text)
+        #OrderNumber=re.findall(r"\d{4}-\d{2}-\d{2}",table.text)
+        OrderNumber = "".join(re.findall(r"\d{18}", table.text))
+        print(OrderNumber)
         i = i + 1
         DateOfOrder = table.find_element_by_class_name("bought-wrapper-mod__checkbox-label___3Va60").text
         print(DateOfOrder)
-        c.execute("INSERT INTO boughtlist VALUES(%d,'%s','test','California','test')" % (i, DateOfOrder))
+        c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','California','test')" % (i, DateOfOrder, OrderNumber))
     conn.commit()
     conn.close()
 except:
-    c.execute('''DROP TABLE boughtlist;''')
+   # c.execute('''DROP TABLE boughtlist;''')
     conn.commit()
     conn.close()
     print("未扫描二维码")

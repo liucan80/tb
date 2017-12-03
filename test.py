@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
+import re
 driver=webdriver.Chrome()
 #driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
 driver.get("https://www.taobao.com")
@@ -39,10 +40,12 @@ print(boughttales)
 i=0;
 for table in boughttales:
     print(table)
-    i=i+1
-    DateOfOrder=table.find_element_by_class_name("bought-wrapper-mod__checkbox-label___3Va60").text
+    OrderNumber = re.findall(r"\d{17}", table.text)
+    print(OrderNumber)
+    i = i + 1
+    DateOfOrder = table.find_element_by_class_name("bought-wrapper-mod__checkbox-label___3Va60").text
     print(DateOfOrder)
-    c.execute("INSERT INTO boughtlist VALUES(%d,'%s','test','California','test')"%(i,DateOfOrder))
+    c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','California','test')" % (i, DateOfOrder, OrderNumber))
 conn.commit()
 conn.close()
 #driver.get_screenshot_as_file("c:\page1.png")
