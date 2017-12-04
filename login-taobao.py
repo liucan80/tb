@@ -22,12 +22,20 @@ driver.maximize_window()
 c = conn.cursor()
 try:
     c.execute('''CREATE TABLE boughtlist
-              (ID INT PRIMARY KEY     NOT NULL,
-              DateOfOrder           TEXT    NOT NULL,
-              OrderNumber            TEXT   NOT NUll,
-              NameOfShop             TEXT   NOT NULL ,
-              LinkOfShop             TEXT   NOT NULL 
-              );''')
+                      (ID INT PRIMARY KEY     NOT NULL,
+                      DateOfOrder           TEXT    NOT NULL,
+                      OrderNumber            TEXT   NOT NULL,
+                      NameOfShop             TEXT   NOT NULL,
+                      LinkOfShop             TEXT   NOT NULL,
+                      ParentOrder          TEXT     NOT NULL,
+                      ProductionPic         TEXT    NULL, 
+                      Production             TEXT   NULL,
+                      LinkOfProduction      TEXT   NULL,
+                      UnitPrice               TEXT  NULL,
+                      Quantity                TEXT  NULL,
+                      ActualCost             TEXT  NULL,
+                      StatusOfTrade         TEXT  NULL    
+                      );''')
     print("Table created successfully")
 except:
     c.execute("DROP TABLE boughtlist")
@@ -41,7 +49,6 @@ except:
                   ProductionPic         TEXT    NULL, 
                   Production             TEXT   NULL,
                   LinkOfProduction      TEXT   NULL,
-                  Speciality             TEXT   NULL,
                   UnitPrice               TEXT  NULL,
                   Quantity                TEXT  NULL,
                   ActualCost             TEXT  NULL,
@@ -78,21 +85,46 @@ try:
         LinkOfShop = table.find_element_by_tag_name("a").get_attribute('href')
         print(LinkOfShop)
         c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','','','','','','','','')" % (i, DateOfOrder, OrderNumber,NameOfShop,LinkOfShop))
-        SubOrders=table.find_elements_by_class_name("suborder-mod__production___3WebF")
-        print(SubOrders)
-        UnitPrices=table.find_elements_by_class_name("price-mod__price___3Z88i")
-        print(UnitPrices)
-        a = 0
-        for suborder in SubOrders:
 
-            LinkOfProduction=suborder.find_element_by_tag_name("a").get_attribute('href')
-            Production=suborder.text
-            UnitPrice=UnitPrices[a].text
-            a=a+1
-            if Production=="保险服务":
-                break
-            i = i + 1
-            c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (i, DateOfOrder, OrderNumber,NameOfShop,LinkOfShop,ParentOrder,Production,LinkOfProduction,'test',UnitPrice,'test','test','test'))
+        ProductionListsBody=table.find_elements_by_tag_name("tbody")
+        del ProductionListsBody[0]
+        for ProductionLists in ProductionListsBody:
+            trs=ProductionLists.find_elements_by_tag_name("tr")
+            for Productionlist in trs:
+                Colms=Productionlist.find_elements_by_tag_name("td")
+                Production=Colms[0].find_element_by_class_name("suborder-mod__production___3WebF").text
+                LinkOfProduction=Colms[0].find_element_by_tag_name("a").get_attribute('href')
+                if LinkOfProduction=="保险服务":
+                    break
+                UnitPrice=Colms[1].text
+                Quantity=Colms[2].text
+                try:
+                    ActualCost=Colms[4].find_element_by_class_name("price-mod__withIcon___z4CVt").text
+                except:
+                    ActualCost=Colms[4].text
+                finally:
+                    print("")
+                StatusOfTrade=Colms[5].text
+                i=i+1
+                c.execute(
+                    "INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (
+                    i, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder,'test', Production, LinkOfProduction,
+                    UnitPrice,Quantity,ActualCost,StatusOfTrade))
+                #     SubOrders=table.find_elements_by_class_name("suborder-mod__production___3WebF")
+    #     print(SubOrders)
+    #     UnitPrices=table.find_elements_by_class_name("price-mod__price___3Z88i")
+    #     print(UnitPrices)
+    #     a = 0
+    #     for suborder in SubOrders:
+    #
+    #         LinkOfProduction=suborder.find_element_by_tag_name("a").get_attribute('href')
+    #         Production=suborder.text
+    #         UnitPrice=UnitPrices[a].text
+    #         a=a+1
+    #         if Production=="保险服务":
+    #             break
+    #         i = i + 1
+    #         c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','')" % (i, DateOfOrder, OrderNumber,NameOfShop,LinkOfShop,ParentOrder,Production,LinkOfProduction,'test',UnitPrice,'test','test','test'))
     conn.commit()
     conn.close()
 except Exception as e:
