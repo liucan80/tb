@@ -5,15 +5,15 @@ from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
 import re
-driver=webdriver.Chrome()
+driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
 #driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
 driver.get("https://www.taobao.com")
 driver.implicitly_wait(5)
 driver.find_element_by_id("J_SiteNavMytaobao").click()
 driver.implicitly_wait(5)
 driver.maximize_window()
-conn=sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
-#conn = sqlite3.connect("c:/test.db")
+#conn=sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
+conn = sqlite3.connect("c:/test.db")
 print("Opened database successfully")
 c = conn.cursor()
 c.execute('''CREATE TABLE boughtlist(
@@ -35,12 +35,12 @@ driver.maximize_window()
 #driver.implicitly_wait(5)
 driver.find_element_by_id("bought").click()
 driver.implicitly_wait(10)
-boughttales=driver.find_elements_by_class_name("bought-wrapper-mod__head-info-cell___29cDO")
+boughttales=driver.find_elements_by_class_name("bought-wrapper-mod__table___3xFFM")
 print(boughttales)
 i=0;
 for table in boughttales:
-    print(table)
-    OrderNumber = re.findall(r"\d{17}", table.text)
+    print(table.text)
+    OrderNumber = "".join(re.findall(r"\d{16,18}", table.text))
     print(OrderNumber)
     i = i + 1
     DateOfOrder = table.find_element_by_class_name("bought-wrapper-mod__checkbox-label___3Va60").text

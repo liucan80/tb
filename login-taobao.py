@@ -5,15 +5,20 @@ from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
 import re
-driver=webdriver.Chrome()
-#driver=webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
+import platform
+import traceback
+if platform.system()=="Windows":
+    driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
+    conn=sqlite3.connect("c:/test.db")
+else:
+    driver = webdriver.Chrome()
+    conn = sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
+print("Opened database successfully")
 driver.get("https://www.taobao.com")
 driver.implicitly_wait(5)
 driver.find_element_by_id("J_SiteNavMytaobao").click()
 driver.implicitly_wait(5)
 driver.maximize_window()
-conn = sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
-print("Opened database successfully")
 c = conn.cursor()
 try:
     c.execute('''CREATE TABLE boughtlist
@@ -30,8 +35,17 @@ except:
                   (ID INT PRIMARY KEY     NOT NULL,
                   DateOfOrder           TEXT    NOT NULL,
                   OrderNumber            TEXT   NOT NUll,
-                  NameOfShop             TEXT   NOT NULL ,
-                  LinkOfShop             TEXT   NOT NULL 
+                  NameOfShop             TEXT   NOT NULL,
+                  LinkOfShop             TEXT   NOT NULL,
+                  ParentOrder          TEXT     NOT NULL,
+                  ProductionPic         TEXT    NULL, 
+                  Production             TEXT   NULL,
+                  LinkOfProduction      TEXT   NULL,
+                  Speciality             TEXT   NULL,
+                  UnitPrice               TEXT  NULL,
+                  Quantity                TEXT  NULL,
+                  ActualCost             TEXT  NULL,
+                  StatusOfTrade         TEXT  NULL    
                   );''')
 finally:
     print("成功创建数据表")
@@ -46,23 +60,44 @@ try:
     # driver.implicitly_wait(5)
     driver.find_element_by_id("bought").click()
     driver.implicitly_wait(10)
-    boughttables = driver.find_elements_by_class_name("bought-wrapper-mod__head-info-cell___29cDO")
-    print(boughttables)
+    boughttables = driver.find_elements_by_class_name("bought-wrapper-mod__table___3xFFM")
+    #print(boughttables)
     i = 0
     for table in boughttables:
-        print(table)
+        i = i + 1
+        #print(table)
         print(table.text)
         #OrderNumber=re.findall(r"\d{4}-\d{2}-\d{2}",table.text)
-        OrderNumber = "".join(re.findall(r"\d{18}", table.text))
-        print(OrderNumber)
-        i = i + 1
         DateOfOrder = table.find_element_by_class_name("bought-wrapper-mod__checkbox-label___3Va60").text
         print(DateOfOrder)
-        c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','California','test')" % (i, DateOfOrder, OrderNumber))
+        OrderNumber = "".join(re.findall(r"\d{16,18}", table.text))
+        print(OrderNumber)
+        ParentOrder=OrderNumber
+        NameOfShop = table.find_element_by_class_name("bought-wrapper-mod__seller-container___3dAK3").text
+        print(NameOfShop)
+        LinkOfShop = table.find_element_by_tag_name("a").get_attribute('href')
+        print(LinkOfShop)
+        c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','','','','','','','','')" % (i, DateOfOrder, OrderNumber,NameOfShop,LinkOfShop))
+        SubOrders=table.find_elements_by_class_name("suborder-mod__production___3WebF")
+        print(SubOrders)
+        UnitPrices=table.find_elements_by_class_name("price-mod__price___3Z88i")
+        print(UnitPrices)
+        a = 0
+        for suborder in SubOrders:
+
+            LinkOfProduction=suborder.find_element_by_tag_name("a").get_attribute('href')
+            Production=suborder.text
+            UnitPrice=UnitPrices[a].text
+            a=a+1
+            if Production=="保险服务":
+                break
+            i = i + 1
+            c.execute("INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (i, DateOfOrder, OrderNumber,NameOfShop,LinkOfShop,ParentOrder,Production,LinkOfProduction,'test',UnitPrice,'test','test','test'))
     conn.commit()
     conn.close()
-except:
+except Exception as e:
    # c.execute('''DROP TABLE boughtlist;''')
+    print(e)
     conn.commit()
     conn.close()
     print("未扫描二维码")
