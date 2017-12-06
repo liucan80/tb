@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import sqlite3
 import re
 import platform
+import urllib.request
 
 def findandstore(pagenumber,ID):
 
@@ -35,10 +36,21 @@ def findandstore(pagenumber,ID):
                 trs = ProductionLists.find_elements_by_tag_name("tr")
                 for Productionlist in trs:
                     Colms = Productionlist.find_elements_by_tag_name("td")
+
                     Production = Colms[0].find_element_by_class_name("suborder-mod__production___3WebF").text
                     LinkOfProduction = Colms[0].find_element_by_tag_name("a").get_attribute('href')
                     if Production == '保险服务':
                         break
+                    try:
+                        ProductionPiclink = Colms[0].find_element_by_tag_name("a").find_element_by_tag_name("img").get_attribute('src')
+                        ProductionPic=urllib.request.urlopen(ProductionPiclink).read()
+                        ProductionPic=sqlite3.Binary(ProductionPic)
+                        # tempdile = open('c:/tes1.png', 'wb')
+                        # tempdile.write(ProductionPic)
+                    except:
+                        ProductionPic='test'
+                        print("未找到图片")
+
                     UnitPrice = Colms[1].text
                     Quantity = Colms[2].text
                     ActualCost = Colms[4].text
@@ -46,7 +58,7 @@ def findandstore(pagenumber,ID):
                     ID = ID + 1
                     c.execute(
                         "INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (
-                            ID, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder, 'test', Production,
+                            ID, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder, ProductionPic, Production,
                             LinkOfProduction,
                             UnitPrice, Quantity, ActualCost, StatusOfTrade))
                     #     SubOrders=table.find_elements_by_class_name("suborder-mod__production___3WebF")
@@ -129,7 +141,7 @@ try:
                       NameOfShop             TEXT   NOT NULL,
                       LinkOfShop             TEXT   NOT NULL,
                       ParentOrder          TEXT     NOT NULL,
-                      ProductionPic         TEXT    NULL, 
+                      ProductionPic         BLOB    NULL, 
                       Production             TEXT   NULL,
                       LinkOfProduction      TEXT   NULL,
                       UnitPrice               TEXT  NULL,
@@ -147,7 +159,7 @@ except:
                   NameOfShop             TEXT   NOT NULL,
                   LinkOfShop             TEXT   NOT NULL,
                   ParentOrder          TEXT     NOT NULL,
-                  ProductionPic         TEXT    NULL, 
+                  ProductionPic         BLOB    NULL, 
                   Production             TEXT   NULL,
                   LinkOfProduction      TEXT   NULL,
                   UnitPrice               TEXT  NULL,
