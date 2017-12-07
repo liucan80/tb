@@ -7,7 +7,50 @@ import sqlite3
 import re
 import platform
 import urllib.request
+import sys
+import os
 
+
+def mkdir(path):
+    # 引入模块
+    import os
+
+    # 去除首位空格
+    path = path.strip()
+    # 去除尾部 \ 符号
+    path = path.rstrip("\\")
+
+    # 判断路径是否存在
+    # 存在     True
+    # 不存在   False
+    isExists = os.path.exists(path)
+
+    # 判断结果
+    if not isExists:
+        # 如果不存在则创建目录
+        # 创建目录操作函数
+        os.makedirs(path)
+        print(path + ' 创建成功')
+
+        return True
+    else:
+        # 如果目录存在则不创建，并提示目录已存在
+        print(path + ' 目录已存在')
+        return False
+def readImage(path):
+    try:
+        fin = open(path, "rb")
+        img = fin.read()
+        return img
+    except IOError:
+
+        print("2")
+        sys.exit(1)
+
+    finally:
+
+        if fin:
+            fin.close()
 def findandstore(pagenumber,ID):
 
     if pagenumber==1:
@@ -44,7 +87,14 @@ def findandstore(pagenumber,ID):
                     try:
                         ProductionPiclink = Colms[0].find_element_by_tag_name("a").find_element_by_tag_name("img").get_attribute('src')
                         ProductionPic=urllib.request.urlopen(ProductionPiclink).read()
-                        ProductionPic=sqlite3.Binary(ProductionPic)
+                        PicPath=("{0}/{1}.jpg".format(picturespath,ID))
+                        tempdile = open(PicPath, 'wb')
+                        tempdile.write(ProductionPic)
+                        tempdile.close()
+                        data = readImage(PicPath)
+                        #ProductionPic = sqlite3.Binary(ProductionPic)
+                        ProductionPic = sqlite3.Binary(data)
+                        #c.execute("INSERT INTO Images(Data) VALUES (?)", (ProductionPic,))
                         # tempdile = open('c:/tes1.png', 'wb')
                         # tempdile.write(ProductionPic)
                     except:
@@ -57,7 +107,7 @@ def findandstore(pagenumber,ID):
                     StatusOfTrade = Colms[5].text
                     ID = ID + 1
                     c.execute(
-                        "INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (
+                        "INSERT INTO boughtlist VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",  (
                             ID, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder, ProductionPic, Production,
                             LinkOfProduction,
                             UnitPrice, Quantity, ActualCost, StatusOfTrade))
@@ -98,6 +148,24 @@ def findandstore(pagenumber,ID):
                         LinkOfProduction = ''
                     if Production == '保险服务':
                         break
+                    try:
+                        ProductionPiclink = Colms[0].find_element_by_tag_name("a").find_element_by_tag_name(
+                            "img").get_attribute('src')
+                        ProductionPic = urllib.request.urlopen(ProductionPiclink).read()
+                        PicPath = ("{0}/{1}.jpg".format(picturespath, ID))
+                        tempdile = open(PicPath, 'wb')
+                        tempdile.write(ProductionPic)
+                        tempdile.close()
+                        data = readImage(PicPath)
+                        # ProductionPic = sqlite3.Binary(ProductionPic)
+                        ProductionPic = sqlite3.Binary(data)
+                        # c.execute("INSERT INTO Images(Data) VALUES (?)", (ProductionPic,))
+                        # tempdile = open('c:/tes1.png', 'wb')
+                        # tempdile.write(ProductionPic)
+                    except:
+                        ProductionPic = 'test'
+                        print("未找到图片")
+
                     UnitPrice = Colms[1].text
                     Quantity = Colms[2].text
                     ActualCost=Colms[4].text
@@ -110,8 +178,9 @@ def findandstore(pagenumber,ID):
                     StatusOfTrade = Colms[5].text
                     ID = ID + 1
                     c.execute(
-                        "INSERT INTO boughtlist VALUES(%d,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (
-                            ID, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder, 'test', Production,
+                        "INSERT INTO boughtlist VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+                            ID, DateOfOrder, OrderNumber, NameOfShop, LinkOfShop, ParentOrder, ProductionPic,
+                            Production,
                             LinkOfProduction,
                             UnitPrice, Quantity, ActualCost, StatusOfTrade))
                     #     SubOrders=table.find_elements_by_class_name("suborder-mod__production___3WebF")
@@ -120,12 +189,17 @@ def findandstore(pagenumber,ID):
     else:
         print("完成")
         return ID
+picturespath="{0}/prictures".format(os.getcwd())
+dbpath="{0}/db".format(os.getcwd())
+mkdir(picturespath)
+mkdir(dbpath)
+
 if platform.system()=="Windows":
     driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
-    conn=sqlite3.connect("c:/test.db")
+    conn=sqlite3.connect("{0}/已买到的宝贝.db".format(dbpath))
 else:
     driver = webdriver.Chrome()
-    conn = sqlite3.connect("/home/luna/PycharmProjects/tb/test.db")
+    conn = sqlite3.connect("{0}/已买到的宝贝.db".format(dbpath))
 print("Opened database successfully")
 driver.get("https://www.taobao.com")
 driver.implicitly_wait(5)
@@ -174,7 +248,6 @@ try:
     element = WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.ID, "bought"))
     )
-
     driver.maximize_window()
     driver.find_element_by_id("bought").click()
     driver.implicitly_wait(10)
