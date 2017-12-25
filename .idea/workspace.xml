@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18b2e0e7-2f7d-4d54-ad9b-cac9476ddd4e" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/tb$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1512625148381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tb$findin_file.coverage" NAME="findin_file Coverage Results" MODIFIED="1512357754300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tb$pc1.coverage" NAME="pc1 Coverage Results" MODIFIED="1511682608749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tb$test.coverage" NAME="test Coverage Results" MODIFIED="1512549915803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tb$scrapytaobao.coverage" NAME="scrapytaobao Coverage Results" MODIFIED="1514031765191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapeTB/scrapeTB/spiders" />
+    <SUITE FILE_PATH="coverage/tb$login_taobao.coverage" NAME="login-taobao Coverage Results" MODIFIED="1512632951981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tb$database_test.coverage" NAME="database-test Coverage Results" MODIFIED="1512193645915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="login-baidu.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/login-baidu.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login-taobao.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/login-taobao.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="912">
+                  <caret line="276" column="19" lean-forward="false" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                    <element signature="e#316#749#0" expanded="false" />
+                    <element signature="e#775#969#0" expanded="false" />
+                    <element signature="e#1034#4400#0" expanded="false" />
+                    <element signature="e#4432#8308#0" expanded="false" />
+                    <marker date="1514198791425" expanded="true" signature="1901:1978" ph="INSERT INTO boughtlist... " />
+                    <marker date="1514198791425" expanded="true" signature="3384:3419" ph="INSERT INTO Images... " />
+                    <marker date="1514198791425" expanded="true" signature="3948:4004" ph="INSERT INTO boughtlist... " />
+                    <marker date="1514198791425" expanded="true" signature="5299:5376" ph="INSERT INTO boughtlist... " />
+                    <marker date="1514198791425" expanded="true" signature="7829:7885" ph="INSERT INTO boughtlist... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="scrapytaobao.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/spiders/scrapytaobao.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="76">
+                  <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="findin_file.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/findin_file.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="57">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/items.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-38">
+                  <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/middlewares.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/items.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/pipelines.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#193#207#0" expanded="true" />
+                    <element signature="e#239#672#0" expanded="false" />
+                    <element signature="e#973#1975#0" expanded="false" />
+                    <element signature="e#2004#2954#0" expanded="false" />
+                    <marker date="1514031995555" expanded="true" signature="991:1922" ph="CREATE TABLE... boughtlist" />
+                    <marker date="1514031995555" expanded="true" signature="2020:2041" ph="DROP TABLE b... " />
+                    <marker date="1514031995555" expanded="true" signature="2074:2949" ph="CREATE TABLE... boughtlist" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="55" column="35" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>suborder-mod__production___3WebF</find>
+      <find>16,18</find>
+      <find>simple-pagination-mod__container___2bG5u</find>
+      <find>pipe</find>
+      <find>obey</find>
+      <find>downloadermi</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pc1.py" />
+        <option value="$PROJECT_DIR$/page3.py" />
+        <option value="$PROJECT_DIR$/page3.html" />
+        <option value="$PROJECT_DIR$/page2.html" />
+        <option value="$PROJECT_DIR$/page1.html" />
+        <option value="$PROJECT_DIR$/findin_file.py" />
+        <option value="$PROJECT_DIR$/database-test.py" />
+        <option value="$PROJECT_DIR$/test3.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/scrapeTB/scrapeTB/items.py" />
+        <option value="$PROJECT_DIR$/login-taobao.py" />
+        <option value="$PROJECT_DIR$/scrapeTB/scrapeTB/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapeTB/scrapeTB/settings.py" />
+        <option value="$PROJECT_DIR$/scrapeTB/scrapeTB/spiders/scrapytaobao.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="29" />
+    <option name="width" value="1489" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DataGrid.QuickDoc.View" value="regular" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\tb\dist" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.scrapytaobao">
+    <configuration name="findin_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tb" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findin_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="login-taobao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tb" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/login-taobao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="scrapytaobao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapeTB/scrapeTB/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tb" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapeTB/scrapeTB/spiders/scrapytaobao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tb" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tb" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.login-taobao" />
+      <item index="1" class="java.lang.String" itemvalue="Python.findin_file" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scrapytaobao" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.scrapytaobao" />
+        <item index="1" class="java.lang.String" itemvalue="Python.login-taobao" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.findin_file" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18b2e0e7-2f7d-4d54-ad9b-cac9476ddd4e" name="Default" comment="" />
+      <created>1511582945602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511582945602</updated>
+    </task>
+    <task id="LOCAL-00001" summary="1.通过ParentOrderNumber建立层级关系&#10;2.获取宝贝名称，链接，单价">
+      <created>1512384544161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512384544161</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.基本完成预想功能&#10;2.函数编程避免使用Goto&#10;3.python无do-while可以用while+if+break替代&#10;4.selenium可以判断页面元素的一些基本状态">
+      <created>1512462549519</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512462549519</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.可以使用pyinstaller(使用pip install自动安装)将py打包成exe程序">
+      <created>1512467598462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512467598462</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.准备添加下载图片功能">
+      <created>1512558576344</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512558576344</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.完成图片下载功能&#10;2.使用OS库获取当前目录和创建目录&#10;3.Python3的占位符使用.format方式&#10;4.sqlite insert不用具体指明数据类型,而是用?作为占位符">
+      <created>1512633326628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512633326628</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293348" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.4952381" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293348" sideWeight="0.49761903" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.4547619" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20595238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.46666667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.4904762" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.通过ParentOrderNumber建立层级关系&#10;2.获取宝贝名称，链接，单价" />
+    <MESSAGE value="1.基本完成预想功能&#10;2.函数编程避免使用Goto&#10;3.python无do-while可以用while+if+break替代&#10;4.selenium可以判断页面元素的一些基本状态" />
+    <MESSAGE value="1.可以使用pyinstaller(使用pip install自动安装)将py打包成exe程序" />
+    <MESSAGE value="1.准备添加下载图片功能" />
+    <MESSAGE value="1.完成图片下载功能&#10;2.使用OS库获取当前目录和创建目录&#10;3.Python3的占位符使用.format方式&#10;4.sqlite insert不用具体指明数据类型,而是用?作为占位符" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.完成图片下载功能&#10;2.使用OS库获取当前目录和创建目录&#10;3.Python3的占位符使用.format方式&#10;4.sqlite insert不用具体指明数据类型,而是用?作为占位符" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="StatusOfTrade" />
+        <watch expression="PicPath" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/database-test.py" />
+    <entry file="file://$PROJECT_DIR$/page1.png" />
+    <entry file="file://$PROJECT_DIR$/page1.html" />
+    <entry file="file://$PROJECT_DIR$/findin_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page2.html" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#316#749#0" expanded="false" />
+            <element signature="e#775#969#0" expanded="false" />
+            <element signature="e#1034#4400#0" expanded="false" />
+            <element signature="e#4432#8308#0" expanded="false" />
+            <marker date="1514198791425" expanded="true" signature="1901:1978" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="3384:3419" ph="INSERT INTO Images... " />
+            <marker date="1514198791425" expanded="true" signature="3948:4004" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="5299:5376" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="7829:7885" ph="INSERT INTO boughtlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.png" />
+    <entry file="file://$PROJECT_DIR$/page1.html" />
+    <entry file="file://$PROJECT_DIR$/page2.html" />
+    <entry file="file://$PROJECT_DIR$/findin_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.png" />
+    <entry file="file://$PROJECT_DIR$/login-taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#316#749#0" expanded="false" />
+            <element signature="e#775#969#0" expanded="false" />
+            <element signature="e#1034#4400#0" expanded="false" />
+            <element signature="e#4432#8308#0" expanded="false" />
+            <marker date="1514198791425" expanded="true" signature="1901:1978" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="3384:3419" ph="INSERT INTO Images... " />
+            <marker date="1514198791425" expanded="true" signature="3948:4004" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="5299:5376" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="7829:7885" ph="INSERT INTO boughtlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.html" />
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Administrator/PycharmProjects/tb/page1.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/page1.html</OriginalElement>
+          <nodes>
+            <node x="264.0" y="164.0">$PROJECT_DIR$/page1.html</node>
+            <node x="203.0" y="246.0">//assets.alicdn.com/sys/common/icon/trade/xcard.png</node>
+            <node x="0.0" y="69.0">//img.alicdn.com/bao/uploaded/i3/TB1QixPJXXXXXXsapXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg</node>
+            <node x="278.0" y="0.0">//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/page1.html" target="//img.alicdn.com/bao/uploaded/i3/TB1QixPJXXXXXXsapXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/page1.html" target="//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/page1.html" target="//assets.alicdn.com/sys/common/icon/trade/xcard.png">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-121.0" y="110.0" />
+          <SelectedNodes>
+            <node>//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page2.html" />
+    <entry file="file://$PROJECT_DIR$/findin_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#316#749#0" expanded="false" />
+            <element signature="e#775#969#0" expanded="false" />
+            <element signature="e#1034#4400#0" expanded="false" />
+            <element signature="e#4432#8308#0" expanded="false" />
+            <marker date="1514198791425" expanded="true" signature="1901:1978" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="3384:3419" ph="INSERT INTO Images... " />
+            <marker date="1514198791425" expanded="true" signature="3948:4004" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="5299:5376" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="7829:7885" ph="INSERT INTO boughtlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.html" />
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page3.py" />
+    <entry file="file://$PROJECT_DIR$/page3.html" />
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Administrator/PycharmProjects/tb/page1.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/page1.html</OriginalElement>
+          <nodes>
+            <node x="264.0" y="164.0">$PROJECT_DIR$/page1.html</node>
+            <node x="203.0" y="246.0">//assets.alicdn.com/sys/common/icon/trade/xcard.png</node>
+            <node x="0.0" y="69.0">//img.alicdn.com/bao/uploaded/i3/TB1QixPJXXXXXXsapXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg</node>
+            <node x="278.0" y="0.0">//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/page1.html" target="//img.alicdn.com/bao/uploaded/i3/TB1QixPJXXXXXXsapXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/page1.html" target="//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/page1.html" target="//assets.alicdn.com/sys/common/icon/trade/xcard.png">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-121.0" y="110.0" />
+          <SelectedNodes>
+            <node>//img.alicdn.com/bao/uploaded/i4/505722667/TB2WXuDXdRopuFjSZFtXXcanpXa_!!505722667.jpg_80x80.jpg</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/python/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="188" column="20" lean-forward="true" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database-test.py" />
+    <entry file="file://$PROJECT_DIR$/page2.html" />
+    <entry file="file://$PROJECT_DIR$/page1.html" />
+    <entry file="file://$PROJECT_DIR$/findin_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-baidu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/27e93f6a-8807-43df-aa68-8a1b6cb1d129/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py" />
+    <entry file="das://table:/4cc77d0a/27e93f6a-8807-43df-aa68-8a1b6cb1d129/main.boughtlist" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f06202c4-1e6d-4e64-b25c-556e816392b6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.png" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/test3.py" />
+    <entry file="das://table:/4cc77d0a/f06202c4-1e6d-4e64-b25c-556e816392b6/main.boughtlist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="276" column="19" lean-forward="false" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#316#749#0" expanded="false" />
+            <element signature="e#775#969#0" expanded="false" />
+            <element signature="e#1034#4400#0" expanded="false" />
+            <element signature="e#4432#8308#0" expanded="false" />
+            <marker date="1514198791425" expanded="true" signature="1901:1978" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="3384:3419" ph="INSERT INTO Images... " />
+            <marker date="1514198791425" expanded="true" signature="3948:4004" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="5299:5376" ph="INSERT INTO boughtlist... " />
+            <marker date="1514198791425" expanded="true" signature="7829:7885" ph="INSERT INTO boughtlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+            <element signature="e#239#672#0" expanded="false" />
+            <element signature="e#973#1975#0" expanded="false" />
+            <element signature="e#2004#2954#0" expanded="false" />
+            <marker date="1514031995555" expanded="true" signature="991:1922" ph="CREATE TABLE... boughtlist" />
+            <marker date="1514031995555" expanded="true" signature="2020:2041" ph="DROP TABLE b... " />
+            <marker date="1514031995555" expanded="true" signature="2074:2949" ph="CREATE TABLE... boughtlist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="55" column="35" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-taobao.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/python/Lib/http/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="263" column="40" lean-forward="false" selection-start-line="263" selection-start-column="40" selection-end-line="263" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeTB/scrapeTB/spiders/scrapytaobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
